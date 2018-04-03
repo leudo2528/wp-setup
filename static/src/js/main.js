@@ -1,1 +1,3 @@
-console.log('hola');
+
+let hola = 5;
+console.log(hola);

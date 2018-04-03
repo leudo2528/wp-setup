@@ -21,6 +21,17 @@ const config = {
 		filename: '[name].js',
 	    path: path.resolve(`${__dirname}/static/`, 'js')
 	    //publicPath:  path.resolve(`${__dirname}/static/`, 'js')
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
+				use: [
+					'babel-loader'
+				]
+			}
+		]
 	}
 };
 
